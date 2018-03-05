@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up</title>
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+<div class="form">
+    <div class="tab-content">
+        <fo id="signup">
+            <h1>Регистрация</h1>
+            <form action="/register" method="post">
+                <div class="field-wrap">
+                    <label>
+                        Име: <span class="req">*</span>
+                    </label>
+                    <input type="text" required autocomplete="off" name="firstName"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Фамилия: <span class="req">*</span>
+                    </label>
+                    <input type="text" required autocomplete="off" name="lastName"/>
+                </div>
+
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <label>
+                            Години: <span class="req">*</span>
+                        </label>
+                        <input type="number" min="15" max="100" required autocomplete="off" name="age"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            ЕГН: <span class="req">*</span>
+                        </label>
+                        <input type="text" min="10" max="10" maxlength="10" required autocomplete="off" name="egn"/>
+                    </div>
+                </div>
+                <input type="submit" class="button button-block" value="Вход"/>
+            </form>
+        </form>
+    </fo>
+    </div>
+</div>
+</body>
+</html>
