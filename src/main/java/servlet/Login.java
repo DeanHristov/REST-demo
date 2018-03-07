@@ -23,6 +23,9 @@ public class Login extends HttpServlet{
         buff.newLine();
         buff.close();
 
+        Cookie myC = new Cookie("name", firstName);
+        myC.setMaxAge(360); // A one hour
+        res.addCookie(myC);
         res.setStatus(res.SC_MOVED_TEMPORARILY);
         res.setHeader("Location", "/home.html");
     }
