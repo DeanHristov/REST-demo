@@ -1,5 +1,8 @@
-package data;
+package core;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Product {
 
     private int id;
