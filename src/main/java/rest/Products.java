@@ -62,7 +62,7 @@ public class Products {
         for (Product item : products) {
             if (item.getId() == id){
                 products.set(id, newProduct);
-                Response.status(200).entity(newProduct).build();
+                return Response.status(200).entity(newProduct).build();
             }
         }
 
